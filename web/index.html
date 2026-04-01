@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurora Commerce AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="page-shell">
+    <header class="hero">
+        <nav class="topbar">
+            <div class="brand">
+                <span class="brand-mark">A</span>
+                <div>
+                    <strong>Aurora Commerce AI</strong>
+                    <span>Luxury systems for modern shoppers</span>
+                </div>
+            </div>
+            <div class="topbar-links">
+                <a href="#catalog">Collection</a>
+                <a href="#lab">AI Lab</a>
+                <a href="#journal">Journal</a>
+            </div>
+        </nav>
+
+        <section class="hero-grid">
+            <div class="hero-copy">
+                <p class="eyebrow">Portfolio-grade Java build</p>
+                <h1>Design-led e-commerce with an explainable AI concierge.</h1>
+                <p class="hero-text">
+                    Aurora is a cinematic storefront for premium lifestyle tech. It combines Java backend APIs,
+                    live recommendation logic, cart intelligence, and a bold editorial UI into one portfolio-ready product.
+                </p>
+                <div class="hero-actions">
+                    <a class="button primary" href="#lab">Try the AI concierge</a>
+                    <a class="button secondary" href="#catalog">Explore products</a>
+                </div>
+                <div class="stat-strip" id="metrics"></div>
+            </div>
+
+            <aside class="spotlight-card">
+                <span class="card-label">This week's story bundle</span>
+                <h2>Mobility Stack</h2>
+                <p>Pulse X1 + Vanta Travel Pack + Echo Frame</p>
+                <div class="spotlight-visual">
+                    <div class="glow glow-one"></div>
+                    <div class="glow glow-two"></div>
+                    <div class="floating-panel">
+                        <span>AI basket confidence</span>
+                        <strong>94%</strong>
+                    </div>
+                </div>
+                <ul class="spotlight-points">
+                    <li>Explainable recommendations</li>
+                    <li>Cross-category bundle reasoning</li>
+                    <li>Premium visual merchandising</li>
+                </ul>
+            </aside>
+        </section>
+    </header>
+
+    <main>
+        <section class="section ai-lab" id="lab">
+            <div class="section-heading">
+                <p class="eyebrow">AI Lab</p>
+                <h2>Shopper persona engine</h2>
+                <p>Choose a shopper type, mood, and budget to see the Java recommendation service adapt in real time.</p>
+            </div>
+
+            <div class="lab-grid">
+                <form class="control-card" id="concierge-form">
+                    <label>
+                        Persona
+                        <select id="persona"></select>
+                    </label>
+                    <label>
+                        Mood
+                        <select id="mood">
+                            <option value="focused">Focused</option>
+                            <option value="bold">Bold</option>
+                            <option value="escape">Escape</option>
+                        </select>
+                    </label>
+                    <label>
+                        Budget
+                        <input id="budget" type="range" min="120" max="500" step="10" value="320">
+                        <span id="budget-value">$320</span>
+                    </label>
+                    <button class="button primary" type="submit">Generate recommendations</button>
+                </form>
+
+                <div class="insight-card" id="recommendation-panel">
+                    <p class="card-label">Concierge thinking</p>
+                    <h3>Waiting for your inputs</h3>
+                    <p class="muted">The recommendation engine will explain why it chose each product.</p>
+                    <div class="recommendation-list" id="recommendation-list"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="catalog">
+            <div class="section-heading inline">
+                <div>
+                    <p class="eyebrow">Collection</p>
+                    <h2>Future-lifestyle catalog</h2>
+                </div>
+                <div class="pill">Live Java API data</div>
+            </div>
+            <div class="catalog-grid" id="catalog-grid"></div>
+        </section>
+
+        <section class="section intelligence-grid">
+            <div class="cart-card">
+                <div class="section-heading">
+                    <p class="eyebrow">Cart Intelligence</p>
+                    <h2>Explainable upsell engine</h2>
+                    <p>Add products to a simulated cart and Aurora will describe the bundle narrative plus the next best action.</p>
+                </div>
+                <div id="cart-items" class="cart-items"></div>
+                <div class="cart-summary" id="cart-summary"></div>
+            </div>
+
+            <div class="journal-card" id="journal">
+                <p class="eyebrow">Brand Journal</p>
+                <h2>What makes this portfolio project stand out</h2>
+                <div class="journal-points">
+                    <article>
+                        <span>01</span>
+                        <h3>Self-contained Java backend</h3>
+                        <p>No frameworks required. A lightweight Java server powers APIs and serves the frontend.</p>
+                    </article>
+                    <article>
+                        <span>02</span>
+                        <h3>AI concepts with explanations</h3>
+                        <p>Recommendations, cart intelligence, and shopper personas all produce visible reasoning instead of magic black boxes.</p>
+                    </article>
+                    <article>
+                        <span>03</span>
+                        <h3>Editorial visual direction</h3>
+                        <p>The interface mixes luxury storytelling, motion, and a premium palette so it feels intentionally designed.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section review-strip" id="reviews"></section>
+    </main>
+</div>
+<script src="/app.js"></script>
+</body>
+</html>
